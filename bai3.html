@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let namSinh = +prompt('Năm sinh')
+    let can = namSinh % 10;
+    let chi = namSinh % 12;
+    let outputCan;
+    let outputChi;
+
+    switch (can) {
+        case 1:
+            outputCan = ' TÂN '
+            break;
+        case 2:
+            outputCan = ' NHÂM '
+            break;
+        case 3:
+            outputCan = ' QUÝ '
+            break
+        case 4:
+            outputCan = ' GIÁP '
+            break;
+        case 5:
+            outputCan = ' ẤT '
+            break;
+        case 6:
+            outputCan = ' BÍNH '
+            break;
+        case 7:
+            outputCan = ' ĐINH '
+            break;
+        case 8:
+            outputCan = ' MẬU '
+            break;
+        case 9:
+            outputCan = ' KỶ '
+            break;
+        default:
+            outputCan = ' CANH ';
+            break;
+    };
+
+    switch (chi) {
+
+        case 1:
+            outputChi = ' DẬU ';
+            break;
+        case 2:
+            outputChi = ' TUẤT ';
+            break;
+        case 3:
+            outputChi = ' HỢI ';
+            break;
+        case 4:
+            outputChi = ' TÝ ';
+            break;
+        case 5:
+            outputChi = ' SỬU ';
+            break;
+        case 6:
+            outputChi = ' DẦN ';
+            break;
+        case 7:
+            outputChi = ' MÃO ';
+            break;
+        case 8:
+            outputChi = ' THÌN ';
+            break;
+        case 9:
+            outputChi = ' TỊ ';
+            break;
+        case 10:
+            outputChi = ' NGỌ ';
+            break;
+        case 11:
+            outputChi = ' MÙI ';
+            break;
+        default:
+            outputChi = ' NGỌ';
+            break;
+    }
+    document.write(`Năm ${namSinh} là tuổi ${outputCan} ${outputChi}`)
+    console.log(namSinh, can, chi, outputCan, outputChi)
+
+</script>
+</body>
+</html>
